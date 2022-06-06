@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="25sp"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main_page" tools:context=".Main_Page">
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="1000dp"
+        android:layout_height="70dp"
+        android:scaleX="10"
+        android:src="@drawable/bar"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="350dp"
+        android:id="@+id/goBack2"
+        android:src="@drawable/back" />
+    <TextView
+        android:id="@+id/Reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/indigo_daisy"
+        android:text="Hotel Room Reservation"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        tools:ignore="ExtraText,MissingConstraints" />
+    <ImageView
+        android:id="@+id/room1"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/room1"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/stars"
+        android:layout_width="43dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:drawableRight="@drawable/ic_24px_star"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:text="23 OMR"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/details1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:text="More Details"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/book1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="260dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Price"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Res1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="260dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="Date"
+        android:text="Select date"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+
+
+    <EditText
+        android:id="@+id/days1"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:hint="Days"
+        android:inputType="number"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+    //////////////second room
+
+    <ImageView
+        android:id="@+id/room2"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:src="@drawable/room2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Res2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390dp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/stars2"
+        android:layout_width="43dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:drawableRight="@drawable/ic_24px_star"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/Price2"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:text="29 OMR"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/days2"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="0"
+        android:hint="Days"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/details2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="540dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:text="More Details"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/book2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="540dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Price"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="540dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="Date"
+        android:text="Select date"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+    //////////////third room
+
+    <ImageView
+        android:id="@+id/room3"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="610dp"
+        android:src="@drawable/room3"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/Res3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="690dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/stars3"
+        android:layout_width="43dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="630dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:drawableRight="@drawable/ic_24px_star"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/Price3"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="630dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:text="42 OMR"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/days3"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="665dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="0"
+        android:hint="Days"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More Details"
+        android:id="@+id/details3"
+        android:backgroundTint="#26a69a"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="840dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/book3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="840dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Price"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/cal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="840dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="Date"
+        android:text="Select date"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+    //////////////fourth room
+    <ImageView
+        android:id="@+id/room4"
+        android:src="@drawable/room4"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="890dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/Res4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1020dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/stars4"
+        android:layout_width="43dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="920dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:drawableRight="@drawable/ic_24px_star"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/Price4"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="920dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:text="19 OMR"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/days4"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="960dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="0"
+        android:hint="Days"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/details4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1130dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:text="More Details"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/book4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="1130dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Price"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/cal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="1130dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="Date"
+        android:text="Select date"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+
+    //reservation
+
+    <ImageView
+        android:id="@+id/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_below="@+id/Reservation2"
+        android:scaleX="10"
+        android:scaleY="1.8"
+        android:src="@drawable/grey"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:src="@drawable/bar"
+        android:layout_width="1000dp"
+        android:layout_height="70dp"
+        android:scaleX="10"
+        android:layout_marginTop="1180dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/Reservation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1180dp"
+        android:fontFamily="@font/indigo_daisy"
+        android:text="Just minutes to complete your booking"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        tools:ignore="ExtraText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/bookall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1250dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Selected Price"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+=
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="1250dp"
+        android:backgroundTint="#26a69a"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Clear all"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1300dp"
+        android:backgroundTint="#26a69a"
+        android:text="View All details" />
+
+    <Button
+        android:id="@+id/button_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1360dp"
+        android:backgroundTint="#26a69a"
+        android:text="Add new booking" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="1300dp"
+        android:backgroundTint="#26a69a"
+        android:text="Update" />
+
+
+    <TextView
+        android:id="@+id/Fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1440dp"
+        android:text="Guest Name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/sur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guest Surname"
+        android:layout_marginTop="1480dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/nat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nationality"
+        android:layout_marginTop="1520dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/id2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservation ID"
+        android:layout_marginTop="1560dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="1423dp"
+        android:hint="First name" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="1470dp"
+        android:hint="Surname" />
+
+    <EditText
+        android:id="@+id/nationality"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="1510dp"
+        android:hint="Nationality" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="1543dp"
+        android:hint="Generated Automatically" />
+
+
+
+
+    <Button
+        android:id="@+id/Close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1610dp"
+        android:backgroundTint="#26a69a"
+        android:text="Close Program" />
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

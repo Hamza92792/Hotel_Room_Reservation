@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hotel_Room_Reservation</string>
+
+
+        <string-array name="roomr">
+            <item>Select Room</item>
+            <item>Single_Deluxe_Room</item>
+            <item>Single_Business_Deluxe_Room</item>
+            <item>Family_Suite</item>
+            <item>Single_Room</item>
+        </string-array>
+
+</resources>
